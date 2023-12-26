@@ -1,0 +1,36 @@
+@use '../abstracts/' as abs;
+
+.btn {
+  padding: .75em 2.5em;
+  display: inline-block;
+
+  text {
+    transform: uppercase;
+    text-decoration: none;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: .6em;
+  }
+
+}
+
+.btn--primary {
+  background: abs.$accent;
+  color: abs.$text-inverse;
+  border: 2px solid abs.$accent;
+
+  &:hover {
+    background: darken(abs.$accent, 15%);
+  }
+}
+
+.btn--secondary {
+  border: 2px solid abs.$text-inverse;
+  color: abs.$text-inverse;
+
+  &:hover {
+    background: abs.$text-inverse;
+    color: abs.$text-main;
+  }
+}

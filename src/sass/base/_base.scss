@@ -1,5 +1,11 @@
+@use '../abstracts/' as abs;
+
 .container {
-  width: 95%;
+  width: 90%;
   max-width: 1200px;
   margin-inline: auto;
+}
+
+body {
+  color: abs.$text-main;
 }
