@@ -92,5 +92,12 @@ textarea:not([rows]) {
 
 body {
   margin: 0;
-  font-family: Raleway, sans-serif;
+}
+
+@use '../abstracts' as abs;
+
+html {
+  font-family: abs.$font-stack;
+  font-weight: 400;
+  line-height: 1.6;
 }
