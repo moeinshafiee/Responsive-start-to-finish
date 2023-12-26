@@ -1,0 +1,13 @@
+@use '../abstracts' as abs;
+
+.hero {
+  background: linear-gradient(to right, abs.$main, abs.$secondary);
+
+  color: abs.$text-inverse;
+  padding-block: 8em;
+  text-align: center;
+}
+
+.hero-img {
+  display: none;
+}

@@ -1,3 +1,5 @@
+@use '../abstracts' as abs;
+
 /* Box sizing rules */
 *,
 *::before,
@@ -94,7 +96,7 @@ body {
   margin: 0;
 }
 
-@use '../abstracts' as abs;
+
 
 html {
   font-family: abs.$font-stack;
