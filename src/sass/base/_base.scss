@@ -8,4 +8,19 @@
 
 body {
   color: abs.$text-main;
+  text-align: center;
+}
+
+.unstyled-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lg-screen {
+  display: none;
+
+  @media (width >=725px) {
+    display: block;
+  }
 }

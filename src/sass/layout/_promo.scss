@@ -1,0 +1,35 @@
+@use '../abstracts/' as abs;
+
+.title-box {
+  background: abs.$accent;
+  color: abs.$text-inverse;
+  margin-inline: auto;
+  padding: 1em;
+  transform: translateY(50%);
+  width: 90%;
+
+  @media (width >=725px) {
+    max-width: 700px;
+  }
+}
+
+.bg-primary {
+  background: abs.$main;
+  color: abs.$text-inverse;
+  padding: 7.5em 2.5em 2.5em;
+}
+
+.promo {
+  .bg-primary {
+    text-align: left;
+    padding-left: 7%;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+  }
+}
+
+.img-box {
+  background: url(../images/phone-in-hand.jpg);
+  background-size: cover;
+  background-position: center;
+}

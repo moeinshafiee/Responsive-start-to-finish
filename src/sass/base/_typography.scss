@@ -5,6 +5,7 @@ h1 {
   font-weight: abs.$font-light;
   line-height: 1.15;
   text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 h2 {
@@ -25,4 +26,20 @@ h2 {
 
 .text-intro {
   font-size: 1.2rem;
+}
+
+.title-footer {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: abs.$text-inverse;
+    opacity: 0.25;
+    margin-block: 2em;
+  }
 }
